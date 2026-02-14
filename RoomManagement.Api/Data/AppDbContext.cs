@@ -17,4 +17,6 @@ public class AppDbContext : DbContext
             new Customer { Id = 2, Name = "Budi Santoso", Email = "budi@gmail.com" }
         );
     }
+    public DbSet<Room> Rooms { get; set; }
+    public DbSet<Reservation> Reservations { get; set; }
 }
